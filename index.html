@@ -1,1 +1,118 @@
-Hello HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iml Project Description for 2023 Fall</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="description-bg-image"><div class="subpage-bg-shelter"></div></div>
+    <div class="pagecontainer">
+     <div class="title2">
+       <span>IML Project</span>
+     </div>
+     <div class="pagebody">
+       <div class="pagenav">
+           <div onclick="goTo(document.getElementById('one'))"><span id="subtitle1">Subtitle 1</span></div>
+           <div onclick="goTo(document.getElementById('two'))"><span id="subtitle2">Subtitle 2</span></div>
+           <div onclick="goTo(document.getElementById('three'))"><span id="subtitle3">Subtitle 3</span></div>
+           <div onclick="goTo(document.getElementById('four'))"><span id="subtitle4">Subtitle 4</span></div>
+           <div onclick="goTo(document.getElementById('five'))"><span id="subtitle5">Subtitle 5</span></div>
+       </div>
+       <div class="pagecontent">
+           <!-- 1 -->
+           <div class="h" id="one">
+               <div class="h1">Background</div>
+               <p>Today's climate crisis has become an urgent issue of global concern, causing profound impacts on human health, ecosystems, economies, and societies. </p>
+               <p>All of these issues stem from human activities and the resulting emissions of greenhouse gases. In China alone, during the first half of 2021, coal consumption for electricity generation reached a staggering 1.57 billion tons, and natural gas consumption for electricity generation amounted to 182.7 billion cubic meters, according to data from the National Energy Administration. Lighting electricity consumption accounts for 10% to 12% of China's total electricity generation, and the production complexity and recycling challenges of LED lights and clean energy lighting fixtures are issues that need attention.</p>
+               <p>However, the problem is that the algae themselves are the product of eutrophication pollution of the water body, and ordinary culture conditions cannot allow them to become a reliable source of continuous light.Synthetic biology gives us new possibilities. We can integrate luciferin systems on carbon-fixing algae chassis and synthesize our own noctiluca. This is how the LAMPS project was born.</p>
+               <div class="img-pagestyle" style="width:80%">
+                 <img src="https://static.igem.wiki/teams/4594/wiki/imp-static/desc-image1.png" alt="">
+               </div>
+               <p style="text-align:center;margin-top:35px;" class="figure-font">References: </p>
+               <p style="text-align:center;margin-top:15px;" class="figure-font"><a href="https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health" class="a-pagestyle" style="color: rgb(81, 81, 81);">Climate change and health</a></p>
+           </div>
+           <!-- 2 -->
+           <div class="h" id="two">
+               <div class="h1">LAMPS<span class="pff">:</span> Synthesize our own luminous algae</div>
+               <p>Our original idea was to transfer the luxCDABE operon gene into PCC7942 strain to achieve our basic goal of making algae glow. The luxCDABE operon encodes <b>the fatty aldehyde transferase luxD, fatty acid reductase luxCE, and fatty aldehyde oxidase luxAB</b>. Because luxAB emits blue light (490 nm) during oxidation, it was once widely used in microbial experiments as a reporter.</p>
+               <div class="img-pagestyle" style="width:100%;margin-top:5px;">
+                 <img src="https://static.igem.wiki/teams/4594/wiki/imp-static/desc-image2.png" alt="">
+               </div>
+               <p>We expected, as the results of the experiment, that the light emitted by the primitive lux operon was a very faint blue light (similar to a schematic diagram of PV), which is very technological, but far from being called "LAMPS". Our project first set out to make our enzymes emit brighter and more colorful light for practical applications. We use both <b>protein engineering</b> and <b>metabolic engineering</b> to achieve the design goal of <b>increasing light intensity</b>.</p>
+               <div class="h2">Neural Networks Generate Ef<span style="font-size:1px;">&nbsp;</span>f<span style="font-size:1px;">&nbsp;</span>icient BRET Fusion Protein tructures</div>
+               <p>Since the LuxCDABE system itself has a low brightness and is not enough to be used in real life, we decided to increase its brightness by some other methods. After reviewing the literature, we found that <b>when a fluorescent protein cp157Venus was fused to the C-terminal of the LuxB protein</b>, the brightness of the Lux operon system was significantly increased and the color of the light changed due to the <b>Biofluorescence Resonance Energy Transfer (BRET)</b> between LuxA, LuxB and Venus. So we constructed a plasmid containing the LuxB:Venus gene and expressed it. <sup>[1]</sup></p>
+               <p>However, since the brightness enhancement still fell short of our requirements and we wanted a richer color system, we screened and expressed brighter fluorescent proteins from FPbase <a href="https://www.fpbase.org" class="a-pagestyle">(www.fpbase.org)</a> that met the requirement of excitation wavelength.</p>
+               <div class="img-pagestyle" style="width:100%;margin-top:5px;margin-bottom:0px;">
+                 <img src="https://static.igem.wiki/teams/4594/wiki/imp-static/desc-image4.png" alt="">
+               </div>
+               <p>The fluorescence reaction substrate is normally increased by the introduction of LuxF and luxG proteins.</p>
+               <p>Additionally, the intensity of light is an essential criterium of LAMPS, leading us to involve two other parts: <b>LuxF and LuxG</b>. Previous study has shown that LuxF would <b>activate luciferases</b> (consists of LuxA and LuxB) by binding to the inhibitor of luciferases <sup>[2]</sup>. And LuxG also contributes to the luminescence with <b>extra substrates FMNH2</b> <sup>[3]</sup>. In a conclusion, in this section we combined basic lux operon, luxG and luxF to form luxCDABEGF and proved the composite part enabled E.coli to emit stronger luminescence than the ordinary lux operon, which is the basis of our whole design LAMPS.</p>
+           </div>
+           <!-- 3 -->
+           <div class="h" id="three">
+               <div class="h1">Make LAMPS more smart and reliable</div>
+               <p>In addition to better realizing the fluorescence function itself, we further explored the design of <b>synthetic biology</b> and <b>biocybernetics</b> in enhancing the application capabilities of engineering cyanobacteria.</p>
+               <p>As obligate photoautotrophic organisms, cyanobacteria's energy metabolism is largely self-sustaining, and it is particularly challenging to maintain the expression of a large amount of exogenous proteins at night. Therefore, adjusting metabolism to meet the fluorescence emission needs of LAMPS is important to considerate.</p>
+               <p>Metabolic optimization involves several aspects:</p>
+               <p style="margin-left:10px;text-indent:2em;font-size:min(1.3vw, 19px);"><span style="color:#2B5D6F;"><b>1.</b></span> We expressed sRNA targeting Glgc, which is a gene encoding glucose-6-phosphate translocase. It reduces the expression of glucose-6-phosphate translocase, thereby decreasing the process of glucose-6-phosphate conversion into ADP-glucose and glycogen synthesis, allowing more material to flow into sucrose synthesis and increasing photosynthetic efficiency. <sup>[6]</sup></p>
+               <p style="margin-left:10px;text-indent:2em;margin-top:8px;font-size:min(1.3vw, 19px);"><span style="color:#2B5D6F;"><b>2.</b></span> Additionally, we learned from the article <sup>[7]</sup> that cyanobacteria have a much higher concentration of pyruvate than acetyl-CoA, suggesting significant untapped metabolic potential. We plan to express pyruvate dehydrogenase to break down more pyruvate into acetyl-CoA, releasing this untapped metabolic potential and increasing product expression <sup>[7]</sup>.</p>
+               <p>Furthermore, considering biosafety, we designed a killing switch to prevent leaks. This is also a fully automated system composed of a logic circuit centered around a metal ion-responsive promoter. </p>
+               <div class="img-pagestyle" style="width:100%;margin-top:0px;margin-bottom:0px;">
+                 <img src="https://static.igem.wiki/teams/4594/wiki/imp-static/desc-image8.png" alt="">
+               </div>
+               <p>We expressed nuclease A(nucA) under a constitutive promoter and linked its inhibitor gene, nuiA, downstream of a Ni ion-responsive promoter. When a certain concentration of Ni ions is added to the culture medium, it induces continuous expression of nuiA, allowing the microorganisms to survive. However, once the microorganisms leak and leave the culture medium, the concentration of Ni ions in the environment decreases, nucA is derepressed, and it cuts the DNA of cyanobacteria, leading to their death. <sup>[8]</sup> This design achieves automatic sterilization in the event of a leak and eliminates the need for manual handling.</p>
+           </div>
+           <!-- 4 -->
+           <div class="h" id="four">
+               <div class="h1">Anticipate application scenarios and address climate issues</div>
+               <p>Considering the commercial feasibility and the value transformation of the technology, we worked with industrial design students to do some scenario exploration and product development with our technology.</p>
+               <p>In the water park at night, people wear luminous bracelets, throw luminous volleyballs on the water, children's swimming rings are luminous, and luminous ducklings float on the water. This is also a scenario that can be realized with our technology.</p>
+               <div class="img-pagestyle" style="width:75%;margin-top:10px;margin-bottom:10px;">
+                 <img src="https://static.igem.wiki/teams/4594/wiki/imp-static/desc-image11.png" alt="">
+               </div>
+               <p>The light-emitting ball could also be used as a marker for emergency relief. When firefighters enter the forest to look for missing tourists, they can drop the ball along the route up the mountain, so they can quickly mark the route.</p>
+               <p>In addition to the biodegradable balls, LAMPS can also produce products that can be used in a wide range of Settings: the roofs of public buildings such as stations/pavilions/corridors/flyovers, floor signs in parks/green Spaces/exhibitions, lighting in historic wooden buildings or waterfront areas, installation art, costume design or experimental art.</p>
+               <div class="img-pagestyle" style="width:95%;margin-top:10px;margin-bottom:10px;">
+                 <img src="https://static.igem.wiki/teams/4594/wiki/imp-static/desc-image13.png" alt="">
+               </div>
+               <p>These two applications amplify the product benefits of biomaterials and combine the technical characteristics of LAMPS. This product makes our technology commercially viable and provides a promising value conversion path for this technology.</p>
+           </div>
+           <div class="h" id="five">
+               <div class="h1">Reference</div>
+               <p style="text-align:left;">[1]&nbsp;&nbsp;Wiki css style from <a href="https://2023.igem.wiki/shanghaitech-china" style="text-decoration:none;color:black;" target="_blank">2023 IGEM ShanghaiTech official</a>, which was written by a team member of our group at that time.</p>
+           </div>
+       </div>
+     </div>
+    </div>
+    <script>
+     var TopDistance = 120;
+     let elements = [document.getElementById('one'),
+     document.getElementById('two'), 
+     document.getElementById('three'), 
+     document.getElementById('four'), 
+     document.getElementById('five')];
+     window.goTo = function(el){
+       document.documentElement.scrollTop += el.getBoundingClientRect().top - TopDistance;
+     }
+     function Highlight(el, subtitle){
+       if (el.getBoundingClientRect().top < TopDistance + 1 && el.getBoundingClientRect().bottom > TopDistance){
+           subtitle.style.color = "#18E9EE";
+       }
+       else{
+           subtitle.style.color = "#F8F0E8";
+       }
+     }
+     function HighlightCheck(){
+       Highlight(elements[0], document.getElementById('subtitle1'));
+       Highlight(elements[1], document.getElementById('subtitle2'));
+       Highlight(elements[2], document.getElementById('subtitle3'));
+       Highlight(elements[3], document.getElementById('subtitle4'));
+       Highlight(elements[4], document.getElementById('subtitle5'));
+     }
+     window.addEventListener("scroll", HighlightCheck);
+    </script>
+    </body>
+</html>
+

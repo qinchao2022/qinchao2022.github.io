@@ -1,0 +1,302 @@
+*{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: AlibabaPuHuiTi;
+    src: url(https://static.igem.wiki/teams/4594/wiki/alibabafont.ttf);
+}
+@font-face {
+    font-family: Arlon;
+    src: url(https://static.igem.wiki/teams/4594/wiki/arlonfont.otf);
+}
+body{
+    background-color: black;
+}
+
+/* change font-family */
+/* pff stands for p's font-family */
+.pff{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.pagecontainer{
+    position: relative;
+    justify-content: center;
+    margin-top: 20vh;
+    margin-left: min(100px, 5vw);
+    margin-right: min(100px, 5vw);
+    margin-bottom: min(80px, 15vh);
+}
+
+.pagecontainer>.title{
+    margin-bottom: 10vh;
+}
+.pagecontainer>.title>span{
+    font-family: Arlon;
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: transparent;
+    -webkit-text-stroke: 3px #F8F0E8;
+}
+.pagecontainer>.title2>span{
+    font-family: Arlon;
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #F8F0E8;
+    /* -webkit-text-stroke: 3px black; */
+}
+.pagecontainer>.title>p{
+    text-align: left;
+    margin-top: 35px;
+    width: 70%;
+    font-family: AlibabaPuHuiTi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #F8F0E8;
+    text-align: justify;
+}
+
+.pagebody {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pagenav {
+    height: 700px;
+    width: 15%;
+    max-width: 720px;
+    min-width: 250px;
+    position: sticky;
+    top: 18vh;
+    margin-right: max(25px, 2vw);
+    padding: 30px 20px 30px 10px;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    transform: translateX(-10%);
+}
+.pagenav>div {
+    height: min(3vw, 53px);
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+.pagenav>div::before{
+    content:'';
+    width:0;
+    height:100%;
+    display:inline-block;
+    position:relative;
+    vertical-align:middle;
+}
+.pagenav>div>span{
+    font-family: Arlon;
+    color: #F8F0E8;
+    font-size: min(1.56vw, 24px);
+    letter-spacing: 2px;
+    vertical-align: middle;
+    transition: all 0.2s ease-out;
+}
+.pagenav>div>span:hover{
+    font-size: min(1.6vw, 26px);
+    transition: all 0.1s linear;
+}
+
+
+.pagecontent {
+    background: #F8F0E8;
+    padding: 30px 5%;
+    margin-right: 0;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    max-width: 1600px;
+    transform: translateY(10vh);
+    border-radius: 50px;
+}
+.pagecontent .h{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/* Katie! */
+.pagecontent .h-maomao{
+    width: 100%;
+    text-align: right;
+    margin-bottom: 40px;
+}
+.box-maomao{
+    width: 200px;
+    height: 180px;
+    display: inline-block;
+    background-color: #F8F0E8;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+.box-img-maomao{
+    width: 200px;
+    height: 130px;
+    margin: 0 auto;
+}
+.text-maomao{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: min(1.4vw,18px);
+    font-family: Arlon;
+    font-weight: 600;
+    transition: all 0.15s linear;
+}
+.img-maomao{
+    margin: 5px auto 0px;
+    width: 180px;
+    height: 120px;
+    transform: translateX(7px);
+    transition: all 0.15s linear;
+    /* margin-right: 0px; */
+}
+.img-maomao>img{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* upon */
+.pagecontent .h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 3.07vw;
+    font-family: Arlon;
+    font-weight: 600;
+}
+.pagecontent .h2{
+    text-align: left;
+    font-size: max(2.2vw, 25px);
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: Arlon;
+    font-weight: 600;
+    color: #4A65FA;
+}
+.pagecontent .h3{
+    text-align: left;
+    font-size: max(2vw, 23px);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: Arlon;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.pagecontent .h4{
+    text-align: left;
+    font-size: max(1.7vw, 20px);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: Arlon;
+    font-weight: 600;
+    margin-left: 60px;
+}
+.img-pagestyle{
+    margin: 20px auto 20px;
+    /* width and height of pictures! */
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+}
+.img-pagestyle>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.pagecontent p{
+    margin-top: 20px;
+    text-align: justify;
+    font-family: AlibabaPuHuiTi;
+    font-size: min(1.5vw, 22px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.pagecontent .a-pagestyle{
+    text-decoration: none;
+    color: #3789da;
+}
+.pagecontent .a-pagestyle:hover{
+    text-decoration: underline;
+}
+.pagecontent .my-formula{
+    font-size: min(1vw, 20px);
+    text-align: left;
+    padding-left: 2vw;
+}
+.pagecontent .my-center-formula{
+    font-size: min(1.2vw, 22px);
+    text-align: center;
+}
+
+/* table */
+.pagecontent table{
+    width: 80%;
+    height: 80%;
+    margin: 30px auto 10px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-family: AlibabaPuHuiTi;
+}
+.pagecontent th{
+    border: 2px solid black;
+}
+.pagecontent td{
+    border: 2px solid black;
+}
+.pagecontent thead{
+    font-size: min(1.7vw, 25px);
+}
+.pagecontent tbody{
+    font-size: min(1.5vw, 22px);
+}
+.pagecontent .figure-font{
+    display: block;
+    margin: 5px auto 20px;
+    text-align: center;
+    font-family: AlibabaPuHuiTi;
+    font-size: min(1.3vw, 18px);
+    font-style: italic;
+    color: rgb(81, 81, 81);
+}
+
+.description-bg-image{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3000px;
+    background: url("https://static.igem.wiki/teams/4594/wiki/bg-static/bg-description-project.jpg");
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.subpage-bg-shelter{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+@media screen and (max-width:1000px){
+    .pagenav{
+        display: none;
+    }
+}
