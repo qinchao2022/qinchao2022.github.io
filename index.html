@@ -1,97 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iml Project</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QC</title>
+<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="description-bg-image"><div class="subpage-bg-shelter"></div></div>
-    <div class="pagecontainer">
-     <div class="title2">
-       <span>IML Project</span>
-     </div>
-     <div class="pagebody">
-       <div class="pagenav">
-           <div onclick="goTo(document.getElementById('one'))"><span id="subtitle1">Subtitle 1</span></div>
-           <div onclick="goTo(document.getElementById('two'))"><span id="subtitle2">Subtitle 2</span></div>
-           <div onclick="goTo(document.getElementById('three'))"><span id="subtitle3">Subtitle 3</span></div>
-           <div onclick="goTo(document.getElementById('four'))"><span id="subtitle4">Subtitle 4</span></div>
-           <div onclick="goTo(document.getElementById('five'))"><span id="subtitle5">Subtitle 5</span></div>
-       </div>
-       <div class="pagecontent">
-           <!-- 1 -->
-           <div class="h" id="one">
-               <div class="h1">Background</div>
-               <p>Today's climate crisis has become an urgent issue of global concern, causing profound impacts on human health, ecosystems, economies, and societies. </p>
-               <p style="text-align:center;margin-top:35px;" class="figure-font">References: </p>
-               <p style="text-align:center;margin-top:15px;" class="figure-font"><a href="https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health" class="a-pagestyle" style="color: rgb(81, 81, 81);">Climate change and health</a></p>
-           </div>
-           <!-- 2 -->
-           <div class="h" id="two">
-               <div class="h1">LAMPS<span class="pff">:</span> Synthesize our own luminous algae</div>
-               <p>Our original idea was to transfer the luxCDABE operon gene into PCC7942 strain to achieve our basic goal of making algae glow. The luxCDABE operon encodes <b>the fatty aldehyde transferase luxD, fatty acid reductase luxCE, and fatty aldehyde oxidase luxAB</b>. Because luxAB emits blue light (490 nm) during oxidation, it was once widely used in microbial experiments as a reporter.</p>
-               <div class="img-pagestyle" style="width:100%;margin-top:5px;">
-                 <img src="https://static.igem.wiki/teams/4594/wiki/imp-static/desc-image2.png" alt="">
-               </div>
-               <p>We expected, as the results of the experiment, that the light emitted by the primitive lux operon was a very faint blue light (similar to a schematic diagram of PV), which is very technological, but far from being called "LAMPS". Our project first set out to make our enzymes emit brighter and more colorful light for practical applications. We use both <b>protein engineering</b> and <b>metabolic engineering</b> to achieve the design goal of <b>increasing light intensity</b>.</p>
-               <div class="h2">Neural Networks Generate Ef<span style="font-size:1px;">&nbsp;</span>f<span style="font-size:1px;">&nbsp;</span>icient BRET Fusion Protein tructures</div>
-               <p>The fluorescence reaction substrate is normally increased by the introduction of LuxF and luxG proteins.</p>
-           </div>
-           <!-- 3 -->
-           <div class="h" id="three">
-               <div class="h1">Make LAMPS more smart and reliable</div>
-               <p>In addition to better realizing the fluorescence function itself, we further explored the design of <b>synthetic biology</b> and <b>biocybernetics</b> in enhancing the application capabilities of engineering cyanobacteria.</p>
-               <p style="margin-left:10px;text-indent:2em;font-size:min(1.3vw, 19px);"><span style="color:#2B5D6F;"><b>1.</b></span> We expressed sRNA targeting Glgc, which is a gene encoding glucose-6-phosphate translocase. It reduces the expression of glucose-6-phosphate translocase, thereby decreasing the process of glucose-6-phosphate conversion into ADP-glucose and glycogen synthesis, allowing more material to flow into sucrose synthesis and increasing photosynthetic efficiency. <sup>[6]</sup></p>
-               <p>Furthermore, considering biosafety, we designed a killing switch to prevent leaks. This is also a fully automated system composed of a logic circuit centered around a metal ion-responsive promoter. </p>
-               <div class="img-pagestyle" style="width:100%;margin-top:0px;margin-bottom:0px;">
-                 <img src="https://static.igem.wiki/teams/4594/wiki/imp-static/desc-image8.png" alt="">
-               </div>
-           </div>
-           <!-- 4 -->
-           <div class="h" id="four">
-               <div class="h1">Anticipate application scenarios and address climate issues</div>
-               <p>In the water park at night, people wear luminous bracelets, throw luminous volleyballs on the water, children's swimming rings are luminous, and luminous ducklings float on the water. This is also a scenario that can be realized with our technology.</p>
-               <div class="img-pagestyle" style="width:75%;margin-top:10px;margin-bottom:10px;">
-                 <img src="https://static.igem.wiki/teams/4594/wiki/imp-static/desc-image11.png" alt="">
-               </div>
-               <p>The light-emitting ball could also be used as a marker for emergency relief. When firefighters enter the forest to look for missing tourists, they can drop the ball along the route up the mountain, so they can quickly mark the route.</p>
-           </div>
-           <div class="h" id="five">
-               <div class="h1">Reference</div>
-               <p style="text-align:left;">[1]&nbsp;&nbsp;Wiki css style from <a href="https://2023.igem.wiki/shanghaitech-china" style="text-decoration:none;color:black;" target="_blank">2023 IGEM ShanghaiTech official</a>, which was written by a team member of our group at that time.</p>
-           </div>
-       </div>
-     </div>
-    </div>
-    <script>
-     var TopDistance = 120;
-     let elements = [document.getElementById('one'),
-     document.getElementById('two'), 
-     document.getElementById('three'), 
-     document.getElementById('four'), 
-     document.getElementById('five')];
-     window.goTo = function(el){
-       document.documentElement.scrollTop += el.getBoundingClientRect().top - TopDistance;
-     }
-     function Highlight(el, subtitle){
-       if (el.getBoundingClientRect().top < TopDistance + 1 && el.getBoundingClientRect().bottom > TopDistance){
-           subtitle.style.color = "#18E9EE";
-       }
-       else{
-           subtitle.style.color = "#F8F0E8";
-       }
-     }
-     function HighlightCheck(){
-       Highlight(elements[0], document.getElementById('subtitle1'));
-       Highlight(elements[1], document.getElementById('subtitle2'));
-       Highlight(elements[2], document.getElementById('subtitle3'));
-       Highlight(elements[3], document.getElementById('subtitle4'));
-       Highlight(elements[4], document.getElementById('subtitle5'));
-     }
-     window.addEventListener("scroll", HighlightCheck);
-    </script>
-    </body>
-</html>
 
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>秦朝和吕乐妍的小窝</h1>
+    <p>Start from 2023.12.03</p> 
+  </div>
+   
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">记事薄</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">主页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">日记1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">日记2</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h2>关于我们</h2>
+        <h5>我们的照片</h5>
+        <div class="fakeimg">
+          <img src="./src/pic1.jpg" class="img-responsive" style="width:60%" alt="Image">
+        </div>
+        <p>郎才女貌</p>
+        <h3>链接</h3>
+        <p>描述文本。</p>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#">链接 1</a></li>
+          <li><a href="#">链接 2</a></li>
+          <li><a href="#">链接 3</a></li>
+        </ul>
+        <hr class="hidden-sm hidden-md hidden-lg">
+      </div>
+      <div class="col-sm-8">
+        <div class="tab-content">
+          <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <h2>吕乐妍</h2>
+            <h5>吕乐妍是谁？</h5>
+            <div class="fakeimg">
+              <img src="./src/pic3.jpg" class="img-responsive" style="width:60%" alt="Image">
+            </div>
+            <p>摄于图书馆</p>
+            <p>一天天的不好好学习，也不知道在干什么。</p>
+          </div>
+          <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <h2>撸猪日记</h2>
+            <h5>今天去撸猪啦！</h5>
+            <div class="img-fluid">
+              <img src="./src/pic2.jpg" class="img-responsive" style="width:60%" alt="">
+            </div>
+            <p>帅哥撸猪</p>
+            <div class="img-fluid">
+              <img src="./src/pic4.jpg" class="img-responsive" style="width:50%" alt="">
+            </div>
+            <p>美女撸猪</p>
+          </div>
+          <div class="tab-pane" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            333333333333333
+          </div>
+        </div>
+
+
+        <br>
+        <h2>标题</h2>
+        <h5>副标题</h5>
+        <div class="fakeimg">图像</div>
+        <p>一些文本..</p>
+        <p>菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！</p>
+      </div>
+    </div>
+  </div>
+   
+  <div class="jumbotron text-center bottom-font" style="margin-bottom:0">
+    <p>© 2024 Unlimited Money limited company. All rights reserved.</p>
+    <p>If any questions or advice, forget them.</p>
+  </div>
+
+
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $('#myTab a:first').tab('show') // 初始化显示第一个tab
+    })
+    </script>
+</body>
+</html>
