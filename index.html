@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QC</title>
+  <title>秦朝和吕乐妍的小窝</title>
 <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body style="background-image:url('./src/background.png');background-size:contain;">
 
   <div class="jumbotron text-center" style="margin-bottom:0">
-    <h1>秦朝和吕乐妍的小窝</h1>
+    <h1 style="font-family:llyFont;">秦朝和吕乐妍的小窝</h1>
     <p>Start from 2023.12.03</p> 
   </div>
    
@@ -22,18 +22,18 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="#">记事薄</a>
+        <a class="navbar-brand" href="#" style="font-family:llyFont;">记事薄</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">主页</a>
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="font-family:llyFont;">主页</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">日记1</a>
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#content1" role="tab" aria-controls="profile" aria-selected="false" style="font-family:llyFont;">日记1</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">日记2</a>
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact" aria-selected="false" style="font-family:llyFont;">日记2</a>
           </li>
         </ul>
       </div>
@@ -43,35 +43,42 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-        <h2>关于我们</h2>
-        <h5>我们的照片</h5>
-        <div class="fakeimg">
+        <h2 style="font-family: qcFont;">关于我们</h2>
+        <h5 style="font-family: qcFont;">我们的照片</h5>
+        <div class="img-fluid">
           <img src="./src/pic1.jpg" class="img-responsive" style="width:60%" alt="Image">
         </div>
-        <p>郎才女貌</p>
-        <h3>链接</h3>
-        <p>描述文本。</p>
+        <p style="font-family: qcFont;">郎才女貌</p>
+        <h3 style="font-family: llyFont;">我们一起的瞬间:</h3>
+        <p style="font-family: qcFont;">(别点进去，没啥看的)</p>
         <ul class="nav nav-pills nav-stacked">
-          <li class="active"><a href="#">链接 1</a></li>
-          <li><a href="#">链接 2</a></li>
-          <li><a href="#">链接 3</a></li>
+          <li class="lly"><a href="https://2023.igem.wiki/shanghaitech-china/team">这是一个链接</a></li>
+          <li class="lly"><a href="https://mp.weixin.qq.com/s?__biz=MjM5NTY5OTMxMA==&mid=2651363067&idx=1&sn=50fa70fcd4192820f2578dd1d2b74f08&chksm=bd08b9fa8a7f30ecfff8779dd1198e577452043751bd231e4e93fc570e7832005e29d7bf96a0&token=240317220&lang=zh_CN#rd">
+            另一个链接</a></li>
         </ul>
         <hr class="hidden-sm hidden-md hidden-lg">
       </div>
       <div class="col-sm-8">
         <div class="tab-content">
+          <!-- 主页 -->
           <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <h2>吕乐妍</h2>
-            <h5>吕乐妍是谁？</h5>
-            <div class="fakeimg">
+            <h2 style="font-family: qcFont;">吕乐妍是谁？</h2>
+            <h5 style="font-family: qcFont;">There she comes!</h5>
+            <div class="img-fluid">
               <img src="./src/pic3.jpg" class="img-responsive" style="width:60%" alt="Image">
             </div>
-            <p>摄于图书馆</p>
-            <p>一天天的不好好学习，也不知道在干什么。</p>
+            <p style="font-style:italic;">摄于图书馆</p>
+            <p class="qc">一天天的不好好学习，也不知道在干什么。</p>
+            <p>还是来张美照吧：</p>
+            <div class="img-fluid">
+              <img src="./src/pic5.jpg" class="img-responsive" style = "width:60%" alt="Image">
+            </div>
           </div>
-          <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <h2>撸猪日记</h2>
-            <h5>今天去撸猪啦！</h5>
+          <!-- 日记1 -->
+          <div class="tab-pane" id="content1" role="tabpanel" aria-labelledby="profile-tab">
+            <h2 style="font-family: qcFont;">撸猪日记</h2>
+            <h5 style="font-family: qcFont;">今天去撸猪啦！</h5>
+            <p>可怜的吕乐妍被秦朝戏耍，往脚下扔爆米花，小香猪们全都去拱吕乐妍啦！小猪围攻小猪~</p>
             <div class="img-fluid">
               <img src="./src/pic2.jpg" class="img-responsive" style="width:60%" alt="">
             </div>
@@ -81,18 +88,49 @@
             </div>
             <p>美女撸猪</p>
           </div>
-          <div class="tab-pane" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-            333333333333333
+          <!-- 日记2 -->
+          <div class="tab-pane" id="contact2" role="tabpanel" aria-labelledby="contact-tab">
+            <h2 style="font-family: qcFont;">上海动物园游记</h2>
+            <h5 style="font-family: qcFont;">吕乐妍小朋友心心念念很久了的动物园</h5>
+            <p>起的很早，超级累</p>
+            <p>但是带着吕乐妍去看同类，让她很开心</p>
+            <p>先附上丑照两张阿巴阿巴</p>
+            <div class="img-fluid">
+              <img src="./src/pic10.jpg" class="img-responsive" style="width:50%" alt="">
+            </div>
+            <div class="img-fluid">
+              <img src="./src/pic11.jpg" class="img-responsive" style="width:50%" alt="">
+            </div>
+            <p class="qc">两个人长得真幽默嘿嘿</p>
+            <div class="img-fluid">
+              <img src="./src/pic6.jpg" class="img-responsive" style="width:50%" alt="">
+            </div>
+            <p class="qc">鹈鹕长得真大啊！感觉可以把吕乐妍一口吃掉，能不能分秦朝一口呢？</p>
+            <div class="img-fluid">
+              <img src="./src/pic7.jpg" class="img-responsive" style="width:50%" alt="">
+            </div>
+            <p class="lly">嘿嘿嘿~~小~熊~猫~嘿嘿嘿~~好可爱~~~毛茸茸的大尾巴~~~嘿嘿嘿~~~</p>
+            <div class="img-fluid">
+              <img src="./src/pic8.jpg" class="img-responsive" style="width:50%" alt="">
+            </div>
+            <p class="qc">吕乐妍想不起来这是什么了。</p>
+            <p class="lly">瞎说，吕乐妍想得起来的，哼哼~小水獭~~~</p>
+
           </div>
+
+
+          <!-- TODO -->
+
+
         </div>
 
 
-        <br>
+        <!-- <br>
         <h2>标题</h2>
         <h5>副标题</h5>
         <div class="fakeimg">图像</div>
         <p>一些文本..</p>
-        <p>菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！</p>
+        <p>菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！</p> -->
       </div>
     </div>
   </div>
