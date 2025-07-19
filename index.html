@@ -1,182 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>秦朝和吕乐妍的小窝</title>
-<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMNR Lab | ShanghaiTech</title>
+    <!-- 本地 Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navigator.css">
+    <link rel="stylesheet" href="css/foot.css">
 </head>
-<body style="background-image:url('./src/background.png');background-size:contain;">
+<body>
 
-  <div class="jumbotron text-center" style="margin-bottom:0">
-    <h1 style="font-family:llyFont;">秦朝和吕乐妍的小窝</h1>
-    <p>Start from 2023.12.03</p> 
-  </div>
-   
-  <nav class="navbar navbar-inverse">
+
+<!-- 固定导航栏 Navigation -->
+<nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top diy-navcolor navbar-dark">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
+        <!-- 左侧 Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="src/images/logo1.png" alt="Logo" class="logo-img">
+        </a>
+
+        <!-- 折叠按钮（小屏） -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Nav Change">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#" style="font-family:llyFont;pointer-events:none;">记事薄</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="font-family:llyFont;">主页</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#content1" role="tab" aria-controls="profile" aria-selected="false" style="font-family:llyFont;">日记1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact" aria-selected="false" style="font-family:llyFont;">日记2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="notebook3-tab" data-toggle="tab" href="#notebook3" role="tab" aria-controls="notebook3" aria-selected="false" style="font-family:llyFont;">日记3</a>
-          </li>
-        </ul>
-      </div>
+
+        <!-- 右侧菜单 -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 gap-3 text-center">
+                <!-- Homepage -->
+                <li class="nav-item">
+                    <a class="nav-link active navigator-link" href="#">Homepage</a>
+                </li>
+                <!-- News -->
+                <li class="nav-item">
+                    <a class="nav-link navigator-link" href="pages/news.html">News</a>
+                </li>
+                <!-- Reseach -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link navigator-link" href="#" id="servicesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Research
+                    </a>
+                    <ul class="dropdown-menu text-center" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="pages/research.html">Overview</a></li>
+                        <li><a class="dropdown-item" href="pages/nanorobot.html">Micro/Nano Robotics</a></li>
+                        <li><a class="dropdown-item" href="pages/acoustic.html">Acoustic Microrobotics</a></li>
+                    </ul>
+                </li>
+                <!-- Publication -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link navigator-link" href="#" id="servicesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Publication
+                    </a>
+                    <ul class="dropdown-menu text-center" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="pages/journal.html">Journal</a></li>
+                        <li><a class="dropdown-item" href="pages/conference.html">Conference</a></li>
+                    </ul>
+                </li>
+                <!-- Group -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link navigator-link" href="#" id="servicesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Group
+                    </a>
+                    <ul class="dropdown-menu text-center" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="pages/pi.html">Prof. Song Liu(PI)</a></li>
+                        <li><a class="dropdown-item" href="pages/people.html">People</a></li>
+                        <li><a class="dropdown-item" href="pages/positions.html">Positions</a></li>
+                    </ul>
+                </li>
+                <!-- Teaching -->
+                <li class="nav-item">
+                    <a class="nav-link navigator-link" href="pages/teaching.html">Teaching</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
-   
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <h2 style="font-family: qcFont;">关于我们</h2>
-        <h5 style="font-family: qcFont;">我们的照片</h5>
-        <div class="img-fluid">
-          <img src="./src/pic1.jpg" class="img-responsive" style="width:60%" alt="Image">
-        </div>
-        <p style="font-family: qcFont;">郎才女貌</p>
-        <h3 style="font-family: llyFont;">我们一起的瞬间:</h3>
-        <p style="font-family: qcFont;">(别点进去，没啥看的)</p>
-        <ul class="nav nav-pills nav-stacked">
-          <li class="lly"><a href="https://2023.igem.wiki/shanghaitech-china/team">这是一个链接</a></li>
-          <li class="lly"><a href="https://mp.weixin.qq.com/s?__biz=MjM5NTY5OTMxMA==&mid=2651363067&idx=1&sn=50fa70fcd4192820f2578dd1d2b74f08&chksm=bd08b9fa8a7f30ecfff8779dd1198e577452043751bd231e4e93fc570e7832005e29d7bf96a0&token=240317220&lang=zh_CN#rd">
-            另一个链接</a></li>
-        </ul>
-        <hr class="hidden-sm hidden-md hidden-lg">
-      </div>
-      <div class="col-sm-8">
-        <div class="tab-content">
-          <!-- 主页 -->
-          <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <h2 style="font-family: qcFont;">吕乐妍是谁？</h2>
-            <h5 style="font-family: qcFont;">There she comes!</h5>
-            <div class="img-fluid">
-              <img src="./src/pic3.jpg" class="img-responsive" style="width:60%" alt="Image">
-            </div>
-            <p style="font-style:italic;">摄于图书馆</p>
-            <p class="qc">一天天的不好好学习，也不知道在干什么。</p>
-            <p>还是来张美照吧：</p>
-            <div class="img-fluid">
-              <img src="./src/pic5.jpg" class="img-responsive" style = "width:60%" alt="Image">
-            </div>
-            <p>为啥要放这张上来？</p>
-            <div class="img-fluid">
-              <img src="./src/pic12.jpg" class="img-responsive" style = "width:60%" alt="Image">
-            </div>
-          </div>
-          <!-- 日记1 -->
-          <div class="tab-pane" id="content1" role="tabpanel" aria-labelledby="profile-tab">
-            <h2 style="font-family: qcFont;">撸猪日记</h2>
-            <h5 style="font-family: qcFont;">今天去撸猪啦！</h5>
-            <p>可怜的吕乐妍被秦朝戏耍，往脚下扔爆米花，小香猪们全都去拱吕乐妍啦！小猪围攻小猪~</p>
-            <div class="img-fluid">
-              <img src="./src/pic2.jpg" class="img-responsive" style="width:60%" alt="">
-            </div>
-            <p>帅哥撸猪</p>
-            <div class="img-fluid">
-              <img src="./src/pic4.jpg" class="img-responsive" style="width:50%" alt="">
-            </div>
-            <p>美女撸猪</p>
-          </div>
-          <!-- 日记2 -->
-          <div class="tab-pane" id="contact2" role="tabpanel" aria-labelledby="contact-tab">
-            <h2 style="font-family: qcFont;">上海动物园游记</h2>
-            <h5 style="font-family: qcFont;">吕乐妍小朋友心心念念很久了的动物园</h5>
-            <p>起的很早，超级累</p>
-            <p>但是带着吕乐妍去看同类，让她很开心</p>
-            <p>先附上丑照两张阿巴阿巴</p>
-            <div class="img-fluid">
-              <img src="./src/pic10.jpg" class="img-responsive" style="width:50%" alt="">
-            </div>
-            <div class="img-fluid">
-              <img src="./src/pic11.jpg" class="img-responsive" style="width:50%" alt="">
-            </div>
-            <p class="qc">两个人长得真幽默嘿嘿</p>
-            <div class="img-fluid">
-              <img src="./src/pic6.jpg" class="img-responsive" style="width:50%" alt="">
-            </div>
-            <p class="qc">鹈鹕长得真大啊！感觉可以把吕乐妍一口吃掉，能不能分秦朝一口呢？</p>
-            <div class="img-fluid">
-              <img src="./src/pic7.jpg" class="img-responsive" style="width:50%" alt="">
-            </div>
-            <p class="lly">嘿嘿嘿~~小~熊~猫~嘿嘿嘿~~好可爱~~~毛茸茸的大尾巴~~~嘿嘿嘿~~~</p>
-            <div class="img-fluid">
-              <img src="./src/pic8.jpg" class="img-responsive" style="width:50%" alt="">
-            </div>
-            <p class="qc">吕乐妍想不起来这是什么了。</p>
-            <p class="lly">瞎说，吕乐妍想得起来的，哼哼~小水獭~~~</p>
-          </div>
-          <!-- 日记3 -->
-          <div class="tab-pane" id="notebook3" role="tabpanel" aria-labelledby="notebook3-tab">
-            <h2 style="font-family: qcFont;">迪士尼日记</h2>
-            <h5 style="font-family: qcFont;">五一放假最后一天去迪士尼！</h5>
-            <p>刚到的时候下了小雨，但无法阻止相爱的我们和炽热的心。</p>
-            <p>但是后面就没下雨了，运气挺好</p>
-            <div class="img-fluid">
-              <img src="./src/pic3-1.jpg" class="img-responsive" style="width:60%" alt="">
-            </div>
-            <p class="qc">疯狂动物城的过山车！真的要素拉满！好玩~~</p>
-            <div class="img-fluid">
-              <img src="./src/pic3-2.jpg" class="img-responsive" style="width:60%" alt="">
-            </div>
-            <p class="qc">我怎么这么帅啊哎我太帅了呜呜呜</p>
-            <p class="lly">还得是我拍得好哼哼 哼哼哼嘿嘿</p>
-            <div class="img-fluid">
-              <img src="./src/pic3-3.jpg" class="img-responsive" style="width:60%" alt="">
-            </div>
-            <p class="qc">这位美女就没我长得帅</p>
-            <div class="img-fluid">
-              <img src="./src/pic3-4.jpg" class="img-responsive" style="width:50%" alt="">
-            </div>
-            <p class="qc">最后附一张城堡的照片吼！</p>
-          </div>
+</nav>
 
 
-          <!-- TODO -->
 
 
-        </div>
-
-
-        <!-- <br>
-        <h2>标题</h2>
-        <h5>副标题</h5>
-        <div class="fakeimg">图像</div>
-        <p>一些文本..</p>
-        <p>菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！</p> -->
-      </div>
+<!-- 页面主体内容 -->
+<!-- 首页主体介绍 -->
+<section class="main-section">
+  <div class="main-section-header">
+    <h2>Advanced Micro-Nano Robot Lab</h2>
+    <p class="aside-text">Official AMNR Lab Portal</p>
+  </div>
+  <!-- 第一行 -->
+  <div class="flex-row reveal">
+    <div class="text-block">
+      <h2>Team Member</h2>
+      <p>Our team is composed of passionate, detail-oriented researchers who value precision and clarity—in both science and life. Every member brings a clean, focused, and disciplined mindset to their work. We believe that a well-organized and mentally tidy approach is essential for handling the complexity of micro/nano-scale tasks.</p>
+    </div>
+    <div class="image-block">
+      <img src="src/images/homepage1.png" alt="PIC1" />
     </div>
   </div>
-   
-  <div class="jumbotron text-center bottom-font" style="margin-bottom:0">
-    <p>© 2024 Unlimited Money limited company. All rights reserved.</p>
-    <p>If any questions or advice, forget them.</p>
+
+  <!-- 第二行 -->
+  <div class="flex-row reverse reveal-right">
+    <div class="image-block">
+      <img src="src/images/homepage2.png" alt="PIC2" />
+    </div>
+    <div class="text-block">
+      <h2>Current Research</h2>
+      <p>Our team is dedicated to advancing the field of nanorobotics, with a particular focus on biomedical applications. We design, control, and deploy micro/nano-scale robots capable of operating within highly constrained environments such as neural tissue and vascular systems.</p>
+    </div>
   </div>
 
+  <!-- 第三行 -->
+  <div class="flex-row reveal">
+    <div class="text-block">
+      <h2>Strength and Priority</h2>
+      <p>Our lab brings together a multidisciplinary team of experts in robotics, bioengineering, computer vision, and microfabrication. With access to state-of-the-art facilities and strong collaboration across clinical and engineering domains, we are committed to developing translational nanorobotic solutions that address real-world medical challenges.</p>
+    </div>
+    <div class="image-block">
+      <img src="src/images/homepage3.png" alt="PIC3" />
+    </div>
+  </div>
+</section>
 
-  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script>
-    $(function () {
-      $('#myTab a:first').tab('show') // 初始化显示第一个tab
-    })
-    </script>
+
+<!-- 数据说话! -->
+<section>
+  <div class="container-data">
+    <div class="lab-info">
+      <p><span class="very-big-data">Nature Physics </span>Published</span></p>
+      <p><span id="data1" class="very-big-data">0</span> Journals and Conferences</p>
+      <p><span id="data2" class="very-big-data">0</span> very clever students</p>      
+      <p><span class="very-big-data">Finalist </span>ICRA</p>
+
+    </div>
+    <div class="lab-picture"></div>
+  </div>
+</section>
+
+<!-- 轮播图外层容器，限制宽度并居中 -->
+<div class="carousel-wrapper">
+  <!-- 轮播图 -->
+  <div id="myCarousel" class="carousel slide"
+       data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover">
+
+    <!-- 底部圆点导航 -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- 轮播内容 -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="src/images/slide4.jpg" class="d-block w-100" alt="PIC1">
+        <div class="carousel-caption">
+          <p><strong>Featured Article</strong> and <strong>Front Cover</strong> of October issue of  IEEE Transactions on Biomedical Engineering, 2024.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="src/images/slide1.png" class="d-block w-100" alt="PIC2">
+        <div class="carousel-caption">
+          <p>World's First Intelligent Holographic Dynamic HIFU System, pioneering a Revolution in Liver Cancer Treatment</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="src/images/slide2.jpg" class="d-block w-100" alt="PIC3">
+        <div class="carousel-caption">
+          <p>Our Article on Nature Physics, 21, 808-816, 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 左右箭头 -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Prev</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!-- 脚注前面的动画 -->
+<div class="footer">
+
+  <!--Content before waves-->
+  <div class="inner-footer flex">
+
+    <h1>See More About Us</h1>
+    <div class="card-container">
+      <div class="footer-card" style="background-image: url('src/images/homepage1.png');cursor:pointer;" onclick="location.href='pages/positions.html'">
+        <div class="card-text">Join Our Team</div>
+      </div>
+      <div class="footer-card" style="background-image: url('src/images/homepage2.png');cursor:pointer;" onclick="location.href='pages/research.html'">
+        <div class="card-text">See Previous Work</div>
+      </div>
+      <div class="footer-card" style="background-image: url('src/images/people/laoban2.png');cursor:pointer;" onclick="location.href='pages/pi.html'">
+        <div class="card-text">Learn P.I.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Waves Container-->
+  <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+  </div>
+  <!--Waves end-->
+
+</div>
+<!--Header ends-->
+
+    <!-- 脚注部分 -->
+    <footer>
+      <div class="footer-content">
+        <p>AMNR Lab | ShanghaiTech University</p>
+        <p>SIST 1D-208.B Zhangjiang Campus at ShanghaiTech University</p>
+        <p>Email:  liusong@shanghaitech.edu.cn</p>
+        <p>© 2025 Advanced Micro-Nano Robotics (AMNR) Lab, ShanghaiTech University. All rights reserved.</p>
+        <div class="foot-images">
+          <img src="src/images/logo1.png" alt="Logo1">
+          <img src="src/images/logo2.png" alt="Logo2">
+        </div>
+      </div>
+    </footer>
+
+
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/navigator.js"></script>
+<script src="js/countUp.umd.js"></script>
+
 </body>
 </html>

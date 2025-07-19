@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Alibaba';
+  src: url('../src/fonts/alibaba.ttf') format('truetype');
+}
+
+#mainNavbar {
+  transition: top 0.5s ease-in-out;
+  font-family: 'Alibaba', Arial, Helvetica, sans-serif;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: dropdownFade 0.3s ease-in-out;
+}
+
+.dropdown-item:active {
+  background-color: #242526 !important;
+  color: #e0e0e0 !important;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navigator-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.navigator-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  width: 100%;
+  height: 5px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.navigator-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+
+.logo-img {
+    height: 40px;
+}
+
+.diy-navcolor {
+    background-color: #242526 !important;
+    /* add a long bottom shadow */
+    box-shadow: 0 4px 20px rgba(58, 60, 65, 0.5);
+    /* background-color: transparent; */
+}

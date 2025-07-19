@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'Alibaba';
+  src: url('../src/fonts/alibaba.ttf') format('truetype');
+}
+body{
+    font-family: 'Alibaba', Arial, Helvetica, sans-serif;
+}
+.pagebody {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sidebar {
+    height: 500px;
+    width: 30%;
+    max-width: 600px;
+    min-width: 230px;
+    position: sticky;
+    top: 18vh;
+    margin-right: max(25px, 2vw);
+    padding: 30px 20px 30px 10px;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    transform: translateX(15%);
+    font-size: larger;
+    background-color: #f0f2f5cc;
+}
+.sidebar .side-link {
+  color: #333;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: all 0.2s ease;
+}
+
+.sidebar .side-link:hover {
+  background-color: #4c4e51;
+  color: #fff;
+  border-radius: 6px;
+  transform: translateX(4px);
+}
+
+
+.pagecontent {
+    padding: 30px 5%;
+    margin-right: 0;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    max-width: 1600px;
+    border-radius: 50px;
+}
+
+/* 容器：启用换行 + 居中对齐 */
+.member-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center; /* 每一行的元素居中 */
+  background: linear-gradient(to right, #f9f9f9ac, #eef2f5ac);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  margin-top: 1rem;
+}
+
+/* 卡片：最大占 4 个，自动适应宽度 */
+.member-card {
+  flex: 1 1 230px;        /* 每个卡片最小230px，最多自动适配，最多4个 */
+  max-width: 300px;       /* 限制最大宽度避免撑太宽 */
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+
+.member-card:hover {
+  transform: translateY(-4px);
+}
+
+.member-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  border: 2px solid #ced5dc;
+  cursor: pointer;
+}
+
+.member-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.member-detail {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+.member-image {
+  display: block;               /* 使 margin auto 生效 */
+  margin: 30px auto;               /* 水平居中 */
+  width: 150px;                 /* 设置固定宽度 */
+  height: 150px;                /* 设置固定高度 */
+  object-fit: cover;            /* 保持图像比例裁剪填满容器 */
+  border-radius: 50%;           /* 圆形效果 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 添加一点阴影美化 */
+}
+
+
+@media (max-width: 1100px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+
+/* 遮罩层样式 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  text-align: left;
+  font-size: 16px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 24px;
+  cursor: pointer;
+}

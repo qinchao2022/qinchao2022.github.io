@@ -1,0 +1,576 @@
+@font-face {
+  font-family: 'Alibaba';
+  src: url('../src/fonts/alibaba.ttf') format('truetype');
+}
+
+body {
+    padding-top: 80px;
+    margin: 0;
+    background-color: #232529;
+    /* background: linear-gradient(-45deg, #205072, #0077b6, #7be495, #90e0ef);
+    background-size: 400% 400%;
+    animation: mygradient 5s ease infinite; */
+}
+/* @keyframes mygradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+h1 {
+  font-family: 'Alibaba', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:48px;
+}
+
+h2 {
+  font-family: 'Alibaba', Arial, Helvetica, sans-serif;
+  font-weight:300;
+  letter-spacing: 1px;
+  font-size:32px;
+}
+
+p {
+  font-family: 'Alibaba', Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  /* color: white; */
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+/* 轮播图外层容器控制宽度和居中 */
+.carousel-wrapper {
+  width: 85%;
+  max-width: 2000px;
+  margin: 100px auto;
+  transform: translateY(15px);
+  padding-bottom: 50px;
+}
+
+/* 默认值：小屏时最低配置 */
+.carousel-inner img {
+  width: 80%;
+  height: 360px;
+  object-fit: contain;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  max-width: 1000px;
+  min-width: 400px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.carousel-caption p {
+  font-size: 10px;
+  color: #fff;
+  margin: 0;
+}
+
+
+/* 适配 ≥600px 的屏幕：600×360 */
+@media (min-width: 700px) {
+  .carousel-inner img {
+    height: 360px;
+  }
+}
+
+/* 适配 ≥800px 的屏幕：800×480 */
+@media (min-width: 900px) {
+  .carousel-inner img {
+    height: 480px;
+  }
+}
+
+/* 适配 ≥1000px 的屏幕：1000×600 */
+@media (min-width: 1100px) {
+  .carousel-inner img {
+    height: 600px;
+  }
+  .carousel-caption p {
+  font-size: 12px;
+  }
+}
+
+/* 适配 ≥1200px 的屏幕：1200×720 */
+@media (min-width: 1300px) {
+  .carousel-inner img {
+    height: 720px;
+  }
+  .carousel-caption p {
+  font-size: 15px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .carousel-inner img {
+    height: 1000px;
+  }
+  .carousel-caption p {
+  font-size: 18px;
+  }
+}
+
+
+
+/* 左右箭头区域添加背景块 */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 60px;                          /* 水平方向大小 */
+  height: 80px;                         /* ✅ 控制垂直高度 */
+  top: 50%;                             /* 垂直居中定位 */
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3); /* 半透明背景 */
+  transition: background-color 0.3s ease;
+  border-radius: 6px;                  /* 可选：圆角美观 */
+}
+
+/* 鼠标悬停时更明显 */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 调整箭头图标位置 */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+  background-size: 100% 100%;
+  filter: drop-shadow(0 0 2px #fff); /* 可选：让箭头更突出 */
+}
+
+
+/* 主体介绍区整体样式 */
+.main-section {
+  padding: 0px;
+  /* background-color: #f9f9f9; */
+  background-color: transparent;
+}
+
+.main-section-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+  height: 100vh;
+  transform: translateY(-50px);
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../src/images/homepage4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-section-header::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 120px; /* 渐变高度可根据视觉效果调整 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #232529 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+.main-section h2 {
+  font-size: 54px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+  /* color: #e1e4ea; */
+}
+
+.main-section .aside-text {
+  font-size: 36px;
+  line-height: 1.6;
+  color: #ece5e5;
+  text-align: right;
+  max-width: 800px;
+  margin: 0 auto;
+  font: "Alibaba", Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .main-section h2 {
+    font-size: 45px;
+  }
+  .main-section .aside-text {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-section h2 {
+    font-size: 32px;
+  }
+  .main-section .aside-text {
+    font-size: 22px;
+  }
+}
+
+
+/* 每一行flex布局 */
+.flex-row {
+  margin: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+/* 文字块样式 */
+.text-block {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.text-block h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.text-block p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e1e4ea;
+}
+
+/* 图片块样式 */
+.image-block {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.image-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 第二行反转左右 */
+.flex-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+  .flex-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .flex-row.reverse {
+    flex-direction: column;
+  }
+
+  .text-block, .image-block {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-row {
+    flex-direction: column;
+  }
+
+  .flex-row.reverse {
+    flex-direction: column;
+  }
+
+  /* 小屏下，图片排在前，文字排在后 */
+  .image-block {
+    order: 1;
+  }
+
+  .text-block {
+    order: 2;
+  }
+
+  .text-block, .image-block {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+
+.reveal {
+  opacity: 0;
+  transform: translateX(-120px);
+  transition: all 1.2s ease-out;
+  will-change: transform, opacity;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(120px);
+  transition: all 1.2s ease-out;
+  will-change: transform, opacity;
+}
+
+.reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.container-data {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  /* background-color: #1c1e23; */
+  /* background-color: transparent; */
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../src/images/background/curve3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* 顶部渐变 */
+.container-data::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #232529 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+/* 底部渐变 */
+.container-data::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #232529 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.lab-info {
+  text-align: left;
+  font-size: 36px;
+  line-height: 1.6;
+  min-width: 300px;
+  color: #e1e4ea;
+  /* background-color: #ffffff; */
+  background-color: transparent;
+  padding: 40px 60px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.lab-picture {
+  width: 400px;
+  height: 200px;
+  margin: 250px 20px;
+  /* background-color: white; */
+  background-color: transparent;
+}
+@media (max-width: 768px) {
+  .lab-picture {
+    width: 200px;
+  }
+}
+@media (min-width: 1600px) {
+  .lab-picture {
+    width: 600px;
+  }
+}
+
+.container-data > .lab-info p {
+  font-size: max(3vw, 24px);
+}
+.very-big-data {
+  font-size: max(5vw, 48px);
+  color: #f9f9f9;
+  font-weight: bold;
+}
+
+
+/* 动画 按钮 */
+.footer {
+  position: relative;
+  text-align: center;
+  /* background: linear-gradient(60deg, rgb(48, 80, 176), rgb(9, 48, 86), rgb(30, 60, 120), rgb(10, 30, 60));
+  background-size: 400% 400%;
+  animation: footerGradient 8s linear infinite; */
+  background-color: #1c1e23;
+  color: white;
+}
+/* @keyframes footerGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+
+.inner-footer {
+  min-height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1600px;
+  padding: 0 1rem;
+}
+@media (min-width: 1500px) {
+  .card-container {
+    gap: 8rem;
+  }
+}
+
+.footer-card {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-text {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Alibaba', Arial, Helvetica, sans-serif;
+}
+
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
