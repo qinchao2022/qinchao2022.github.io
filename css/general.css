@@ -107,6 +107,13 @@
       margin-bottom: 1.5rem;
     }
 
+    /* 为Teaching页面设置 */
+    .center-page-container {
+      display: block;
+      margin: 0 auto;
+      max-width: 850px;
+    }
+
     .list-container {
       padding-left: 1.5rem;
       font-size: 18px;
@@ -118,6 +125,7 @@
       padding-left: 10px;
       margin-bottom: 1rem;
     }
+
     .general-big-image {
       width: 100%;
       max-width: 1200px;
@@ -137,6 +145,32 @@
       border-radius: 12px;
       object-fit: cover;
       background-position: center;
+    }
+    
+    .small-image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .general-small-image {
+      max-width: 420px;
+      border-radius: 12px;
+      height: auto;
+      min-width: 300px;
+    }
+
+    @media (min-width: 1200px) {
+      .small-image-container {
+        flex-wrap: nowrap;
+      }
+    }
+    @media (max-width:1200px) {
+      .general-small-image {
+        max-width: 350px;
+      }
     }
 
 

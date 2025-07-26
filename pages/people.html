@@ -97,6 +97,7 @@
             <li class="nav-item"><a class="nav-link side-link" href="#professors">Professors</a></li>
             <li class="nav-item"><a class="nav-link side-link" href="#phd">Ph.D. Students</a></li>
             <li class="nav-item"><a class="nav-link side-link" href="#master">Master Students</a></li>
+            <li class="nav-item"><a class="nav-link side-link" href="#graduated">Graduated Students</a></li>
             <li class="nav-item"><a class="nav-link side-link" href="#alumni">Alumni</a></li>
           </ul>
         </div>
@@ -105,14 +106,14 @@
             <section id="professors">
               <h2>Professors</h2>
               <div class="member-container">
-                <div class="member-card">
+                <div class="member-card" data-id="laoban">
                   <img src="../src/images/people/laoban.png" alt="Prof. Name" onclick="location.href='pi.html'" style="cursor:pointer;">
                   <p class="member-name">P.I. Prof. Song Liu 刘松教授</p>
                   <p class="member-detail">Tenure Track Assistant Professor</p>
                   <p class="member-detail">Principal Investigator</p>
                   <p class="member-detail">liusong@shanghaitech.edu.cn</p>
                 </div>
-                <div class="member-card">
+                <div class="member-card" data-id="suhu">
                   <img src="../src/images/people/sulaoshi.jpg" alt="Prof. Name">
                   <p class="member-name">Prof. Dr. Hu Su 苏虎博士</p>
                   <p class="member-detail">Visiting Professor</p>
@@ -126,12 +127,7 @@
             <section id="phd" class="mt-5">
               <h2>Ph.D. Students</h2>
               <div class="member-container">
-                <div class="member-card" data-id="yuyu">
-                  <img src="../src/images/people/shijie.jpg" alt="PhD Student">
-                  <p class="member-name">Yuyu Jia 贾羽宇</p>
-                  <p class="member-detail">B.S. Nantong University</p>
-                  <p class="member-detail">jiayy1@shanghaitech.edu.cn</p>
-                </div>
+
                 <div class="member-card" data-id="chengxi">
                   <img src="../src/images/people/chengxi.jpg" alt="PhD Student">
                   <p class="member-name">Chengxi Zhong 钟承希</p>
@@ -168,25 +164,6 @@
                   <p class="member-detail">B.S. ShanghaiTech University</p>
                   <p class="member-detail">fuxiang2022@shanghaitech.edu.cn</p>
                 </div>
-              </div>
-            </section>
-
-            <!-- 硕士生 -->
-            <section id="master" class="mt-5">
-              <h2>Master Students</h2>
-              <div class="member-container">
-                <div class="member-card" data-id="liuqing">
-                  <img src="../src/images/people/liuqing.jpg" alt="PhD Student">
-                  <p class="member-name">Qing Liu 刘晴</p>
-                  <p class="member-detail">B.S. Central South University</p>
-                  <p class="member-detail">liuqing2022@shanghaitech.edu.cn</p>
-                </div>
-                <div class="member-card" data-id="siyuan">
-                  <img src="../src/images/people/siyuan.jpg" alt="PhD Student">
-                  <p class="member-name">Siyuan An 安思远</p>
-                  <p class="member-detail">B.S. Shandong University</p>
-                  <p class="member-detail">ansy2022@shanghaitech.edu.cn</p>
-                </div>
                 <div class="member-card" data-id="qingyi">
                   <img src="../src/images/people/qingyi.jpg" alt="PhD Student">
                   <p class="member-name">Qingyi Lu 陆清怡</p>
@@ -196,9 +173,16 @@
                 <div class="member-card" data-id="yujie">
                   <img src="../src/images/people/yujie.jpg" alt="PhD Student">
                   <p class="member-name">Yujie Jiang 姜昱婕</p>
-                  <p class="member-detail">B.S. Huazhong University of Science and Technolgoy</p>
+                  <p class="member-detail">B.S. Huazhong University of Science and Technology</p>
                   <p class="member-detail">jiangyj12023@shanghaitech.edu.cn</p>
                 </div>
+              </div>
+            </section>
+
+            <!-- 硕士生 -->
+            <section id="master" class="mt-5">
+              <h2>Master Students</h2>
+              <div class="member-container">
                 <div class="member-card" data-id="jieyun">
                   <img src="../src/images/people/jieyun.jpg" alt="PhD Student">
                   <p class="member-name">Jieyun Zou 邹介筠</p>
@@ -210,6 +194,37 @@
                   <p class="member-name">Xin Mu 慕欣</p>
                   <p class="member-detail">B.S. ShanghaiTech University</p>
                   <p class="member-detail">muxin2024@shanghaitech.edu.cn</p>
+                </div>
+                <div class="member-card" data-id="huaming">
+                  <img src="../src/images/people/huaming.jpg" alt="PhD Student">
+                  <p class="member-name">Huaming Li 李华敏</p>
+                  <p class="member-detail">B.S. Central South University</p>
+                  <p class="member-detail">lihm2025@shanghaitech.edu.cn</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- 毕业生 -->
+            <section id="graduated" class="mt-5">
+              <h2>Graduated Students</h2>
+              <div class="member-container">
+                <div class="member-card" data-id="yuyu">
+                  <img src="../src/images/people/shijie.jpg" alt="PhD Student">
+                  <p class="member-name">Yuyu Jia 贾羽宇</p>
+                  <p class="member-detail">B.S. Nantong University</p>
+                  <p class="member-detail">jiayy1@shanghaitech.edu.cn</p>
+                </div>
+                <div class="member-card" data-id="liuqing">
+                  <img src="../src/images/people/liuqing.jpg" alt="PhD Student">
+                  <p class="member-name">Qing Liu 刘晴</p>
+                  <p class="member-detail">B.S. Central South University</p>
+                  <p class="member-detail">liuqing2022@shanghaitech.edu.cn</p>
+                </div>
+                <div class="member-card" data-id="siyuan">
+                  <img src="../src/images/people/siyuan.jpg" alt="PhD Student">
+                  <p class="member-name">Siyuan An 安思远</p>
+                  <p class="member-detail">B.S. Shandong University</p>
+                  <p class="member-detail">ansy2022@shanghaitech.edu.cn</p>
                 </div>
               </div>
             </section>

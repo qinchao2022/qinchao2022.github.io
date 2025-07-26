@@ -16,8 +16,8 @@ body{
 .sidebar {
     height: 500px;
     width: 30%;
-    max-width: 600px;
-    min-width: 230px;
+    max-width: 500px;
+    min-width: 270px;
     position: sticky;
     top: 18vh;
     margin-right: max(25px, 2vw);

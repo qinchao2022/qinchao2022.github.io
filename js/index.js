@@ -60,5 +60,5 @@ function setupCountOnScroll(id, targetNumber) {
 
   window.addEventListener('scroll', reveal);
 }
-setupCountOnScroll('data1', 99);
+setupCountOnScroll('data1', 53);
 setupCountOnScroll('data2', 15);

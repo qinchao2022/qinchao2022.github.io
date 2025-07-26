@@ -282,7 +282,8 @@ p {
 }
 
 .image-block img {
-  max-width: 100%;
+  max-width: min(100%, 800px);
+  min-width: 65%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
