@@ -53,7 +53,7 @@
 
 
 .logo-img {
-    height: 40px;
+    height: 45px;
 }
 
 .diy-navcolor {
@@ -61,4 +61,8 @@
     /* add a long bottom shadow */
     box-shadow: 0 4px 20px rgba(58, 60, 65, 0.5);
     /* background-color: transparent; */
+}
+
+.navbar-brand {
+  padding-left: 20px;
 }
