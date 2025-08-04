@@ -206,7 +206,7 @@ p {
 
 
 .main-section h2 {
-  font-size: 54px;
+  font-size: 76px;
   margin-bottom: 10px;
   text-align: center;
   color: white;
@@ -214,13 +214,23 @@ p {
 }
 
 .main-section .aside-text {
-  font-size: 36px;
+  font-size: 48px;
   line-height: 1.6;
   color: #ece5e5;
   text-align: right;
   max-width: 800px;
   margin: 0 auto;
   font: "Alibaba", Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1800px) {
+  .main-section h2 {
+    font-size: 54px;
+  }
+  .main-section .aside-text {
+    font-size: 36px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 1200px) {
