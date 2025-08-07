@@ -585,3 +585,147 @@ p {
     font-size:24px;
   }
 }
+
+
+/* Selected Publication */
+.representative-paper{
+  width: 90%;
+  margin: 1rem auto 10rem auto;
+  padding: 1rem;
+}
+.representative-paper h2{
+  font-size: 36px;
+  color: #f9f9f9;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.paper-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.paper-text{
+  color: #f9f9f9;
+  padding: 2rem;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  order: 0;
+}
+.paper-title{
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: 'Alibaba', Arial, Helvetica, sans-serif;
+}
+.paper-intro > p{
+  color: #f9f9f9;
+  line-height: 1.5;
+  font-size: 18px;
+}
+.paper-image{
+  width: 350px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paper-image > img{
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+.paper-intro > a{
+  margin-top: 1rem;
+  color: #f9f9f9;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Alibaba', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.paper-intro > a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 2000px) {
+  .paper-text{
+    width: 1200px;
+  }
+  .paper-title{
+    font-size: 36px;
+  }
+  .paper-intro > p, .paper-intro > a {
+    font-size: 22px;
+  }
+  .paper-image{
+    width: 450px;
+  }
+  .paper-container{
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .paper-text{
+    width: 1000px;
+  }
+  .paper-image{
+    width: 400px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .paper-text{
+    width: 600px;
+  }
+  .paper-title{
+    font-size: 28px;
+  }
+  .paper-intro > p, .paper-intro > a {
+    font-size: 18px;
+  }
+  .paper-image{
+    width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .paper-text{
+    width: 500px;
+  }
+  .paper-title{
+    font-size: 18px;
+  }
+  .paper-intro > p, .paper-intro > a {
+    font-size: 14px;
+  }
+
+}
+
+/* @media (max-width: 968px) {
+  .paper-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .paper-title {
+    font-size: 24px;
+  }
+  .paper-intro > p, .paper-intro > a {
+    font-size: 16px;
+  }
+  .paper-image {
+    order: 1;
+    width: 360px;
+  }
+  .paper-text {
+    order: 2;
+    width: 400px;
+  }
+} */
