@@ -106,6 +106,13 @@ const memberDetails = {
     <p style="text-align: center;">B.S. from Central South University</p>
     <p style="text-align: center;">Email: lihm2025@shanghaitech.edu.cn</p>
     <p>Researches robotic swarms and micro-scale actuation. She enjoys coding interactive games and is working on decentralized control strategies for cooperative micro-robot behaviors.</p>
+  `,
+    saida: `
+    <h2 style="text-align: center;">Saida Yang 杨赛达</h2>
+    <img src="../src/images/people/saida.jpg" alt="Saida Yang" class="member-image">
+    <p style="text-align: center;">B.S. from Huazhong University of Science and Technology</p>
+    <p style="text-align: center;">Email: saida.yang@shanghaitech.edu.cn</p>
+    <p>Researches micro stuffs using acoustic sensing. She enjoys painting and is focused on developing novel soft robotic systems for medical applications.</p>
   `
 };
 

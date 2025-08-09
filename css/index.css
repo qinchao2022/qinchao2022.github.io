@@ -594,7 +594,7 @@ p {
   padding: 1rem;
 }
 .representative-paper h2{
-  font-size: 36px;
+  font-size: 45px;
   color: #f9f9f9;
   margin-bottom: 1rem;
   text-align: left;
@@ -706,7 +706,15 @@ p {
   .paper-intro > p, .paper-intro > a {
     font-size: 14px;
   }
+    .representative-paper h2{
+    font-size: 26px;
+  }
+}
 
+@media (max-width: 824px) {
+    .representative-paper h2{
+    font-size: 32px;
+  }
 }
 
 /* @media (max-width: 968px) {
