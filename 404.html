@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMNR Lab | 404 Not Found</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/foot.css" />
+    <link rel="icon" type="image/x-icon" href="src/images/logo3.png">
+
+</head>
+<body class="body-class5">
+    
+    <!-- 页面主体 -->
+    <div class="general-page-container">
+        <h1>Sorry, the page you are looking for does not exist.</h1>
+        <h1>Going back to homepage in 5 seconds...</h1>
+        <p>If your browser does not automatically redirect you, please click <a href="index.html">here</a>.</p>
+
+    </div>
+
+    <!-- 脚注部分 -->
+    <footer>
+      <div class="footer-content">
+        <p>AMNR Lab | ShanghaiTech University</p>
+        <p>SIST 1D-208.B Zhangjiang Campus at ShanghaiTech University</p>
+        <p>Email:  liusong@shanghaitech.edu.cn</p>
+        <p>© 2025 Advanced Micro-Nano Robotics (AMNR) Lab, ShanghaiTech University. All rights reserved.</p>
+        <div class="foot-images">
+          <img src="src/images/logo1.png" alt="Logo1">
+          <img src="src/images/logo2.png" alt="Logo2">
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script>
+        // 倒计时并跳转
+        var seconds = 5;
+        var countdownElement = document.getElementById('countdown');
+        
+        var countdown = setInterval(function() {
+            seconds--;
+            countdownElement.textContent = seconds;
+            
+            if (seconds <= 0) {
+                clearInterval(countdown);
+                window.location.href = "index.html"; // 跳转到主页
+            }
+        }, 1000);
+        
+        setTimeout(function() {
+            window.location.href = "index.html";
+        }, 5000);
+    </script>
+</body>
+</html>
