@@ -70,7 +70,7 @@ body{
 
 /* 卡片：最大占 4 个，自动适应宽度 */
 .member-card {
-  flex: 1 1 230px;        /* 每个卡片最小230px，最多自动适配，最多4个 */
+  flex: 1 1 240px;        /* 每个卡片最小240px，最多自动适配，最多4个 */
   max-width: 300px;       /* 限制最大宽度避免撑太宽 */
   text-align: center;
   background-color: #ffffff;
