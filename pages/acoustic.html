@@ -85,8 +85,19 @@
     <!-- 页面主题部分 -->
     <div class="general-page-container">
 
+        <!-- 固定按钮和导航栏 -->
+        <button id="nav-toggle" class="fixed-nav-toggle">☰</button>
+        <div id="floating-nav" class="floating-nav">
+            <ul>
+                <li><a href="#section1">Acousto-dewetting Robotics</a></li>
+                <li><a href="#section2">Acoustic Manipulation System</a></li>
+                <li><a href="#section3">Real-time Acoustic Holography</a></li>
+                <li><a href="#section4">Soft Micro-fiber Manipulation</a></li>
+            </ul>
+        </div>
+
         <h1>Acoustic Robotics</h1>
-        <h2>Acousto-dewetting robotics</h2>
+        <h2 id="section1">Acousto-dewetting Robotics</h2>
         <div>
             <img src="../src/images/acoustic1.png" alt="Acousto-dewetting robotics" class="general-middle-image">
         </div>
@@ -94,7 +105,24 @@
         <span class="under-image-text" onclick="location.href='https://www.nature.com/articles/s41567-025-02844-6'" style="cursor:pointer;">DOI: 10.1038/s41567-025-02844-6</span>
         <p>We developed a droplet microfluidics approach that achieves versatile droplet manipulation in various extreme scenarios associated with superhydrophilic surfaces, and applied it to an in vivo clinical setting for the rapid and safe removal of thrombus as well as drug delivery.</p>
 
-        <h2>Automated Acoustic Manipulation System</h2>
+        <div class="video-container">
+            <video class="video-iframe" controls muted loop>
+                <source src="../src/videos/np01.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-container">
+            <video class="video-iframe" controls muted loop>
+                <source src="../src/videos/np02.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-container">
+            <video class="video-iframe" controls muted loop>
+                <source src="../src/videos/np03.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+        <h2 id="section2">Automated Acoustic Manipulation System</h2>
         <div>
             <img src="../src/images/acoustic2.jpg" alt="Automated Acoustic Manipulation System" class="general-middle-image">
         </div>
@@ -102,8 +130,14 @@
         <span class="under-image-text" onclick="location.href='https://doi.org/10.1109/TRO.2024.3521858'" style="cursor:pointer;">DOI: 10.1109/TRO.2024.3521858</span>
         <p>The system has large workspace, reaching 50 × 50 mm square, making it readily usable for standard in-petri dish applications to carry up complicated analysis tasks in practice</p>
         <p>The system has 2500 independent transducers, resulting in the excellence in generating high-fidelity acoustic fields</p>
+        <div class="video-container">
+            <video class="video-iframe" controls muted loop>
+                <source src="../src/videos/tro01.mp4" type="video/mp4">
+            </video>
+        </div>
 
-        <h2>Real-time Acoustic Holography with Iterative Unsupervised Learning for Acoustic Robotic Manipulation</h2>
+
+        <h2 id="section3">Real-time Acoustic Holography with Iterative Unsupervised Learning for Acoustic Robotic Manipulation</h2>
         <div>
             <img src="../src/images/acoustic3.png" alt="Real-time Acoustic Holography" class="general-middle-image">
         </div>
@@ -111,7 +145,27 @@
         <span class="under-image-text" onclick="location.href='https://doi.org/10.1109/ICRA48891.2023.10160962'" style="cursor:pointer;">DOI: 10.1109/ICRA48891.2023.10160962</span>
         <p>We propose an iterative unsupervised learning approach, integrating a physics-based ASM model and neural networks, to achieve precise real-time acoustic holography for contactless micro-nano robotic manipulation.</p>
 
+
+        <h2 id="section4">In-Plane Manipulation of Soft Micro-Fiber with Ultrasonic Transducer Array and Microscope</h2>
+        <div>
+            <img src="../src/images/acoustic4.png" alt="In-Plane Manipulation of Soft Micro-Fiber" class="general-small-image">
+        </div>
+        <span class="under-image-text">Jieyun Zou, Siyuan An, Mingyue Wang, Jiaqi Li, Yalin Shi, Youfu Li, and Song Liu* (Corresponding Author)</span>
+        <span class="under-image-text" onclick="location.href='https://doi.org/10.1109/ICRA55743.2025.11127336'" style="cursor:pointer;">DOI: 10.1109/ICRA55743.2025.11127336</span>
+        <p>This paper is awarded ICRA Finalist 2025.</p>
+        <p>In this paper, an automated ultrasonic manipulation system is introduced for in-plane soft micro-fiber manipulation, which mainly consists of an ultrasonic transducer array and a microscope. A real-time trap generation algorithm is designed to manipulate the micro-fibers by the visual feedback from microscope.</p>
+
+        <div class="video-container">
+            <video class="video-iframe" controls muted loop>
+                <source src="../src/videos/soft_fiber.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
         <h2>More Details Coming Soon...</h2>
+
+
+
     </div>
 
 

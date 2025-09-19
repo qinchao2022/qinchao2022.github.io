@@ -388,3 +388,24 @@
     width: 90%;
   }
 }
+
+/* video style */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;    /* 容器最大宽度 */
+  aspect-ratio: 16 / 9; /* 高度按比例自动算 */
+  background-color: #000;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.video-iframe {
+  width: 100% !important;   /* 强制宽度跟随容器 */
+  height: 100% !important;  /* 强制高度跟随容器 */
+  display: block;
+  object-fit: contain;        /* 填充容器，保持比例（可能裁切） */
+  border: none;
+}

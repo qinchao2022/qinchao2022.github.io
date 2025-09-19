@@ -85,6 +85,46 @@
 </nav>
 
 
+<!-- 首页加载动画层 -->
+<div id="loader">
+    <div class="loader-content" style="background-color:rgba(145, 136, 136, 0.193)">
+        <h1>Welcome to AMNR Lab</h1>
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <div class="door mask-top"></div>
+
+<div class="door mask-bottom">
+  <!-- Waves Container -->
+  <div style="position: absolute; bottom: 0; width: 100%; height: 150px; overflow: hidden;">
+    
+    <!-- 上半部分：波浪 -->
+    <div style="position: absolute; bottom: 0px; width: 100%; height: 140px;">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+           viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto" style="width: 100%; height: 100%;">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.4)" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.25)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.15)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255,255,255,0.1)" />
+        </g>
+      </svg>
+    </div>
+
+  <!-- 下半部分：水底 -->
+  <!-- <div style="position: absolute; bottom: 0; width: 100%; height: 110px; background: #B1B1B1;"></div> -->
+
+  </div>
+</div>
+
+
+
+</div>
 
 
 <!-- 页面主体内容 -->
@@ -161,7 +201,7 @@
 
     <!-- 轮播内容 -->
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item active" onclick="location.href='pages/nanorobot.html#section2';" style="cursor:pointer;">
         <img src="src/images/slide4.jpg" class="d-block w-100" alt="PIC1">
         <div class="carousel-caption">
           <p><strong>Featured Article</strong> and <strong>Front Cover</strong> of October issue of  IEEE Transactions on Biomedical Engineering, 2024.</p>
@@ -173,22 +213,22 @@
           <p>World's First Intelligent Holographic Dynamic HIFU System, pioneering a Revolution in Liver Cancer Treatment</p>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" onclick="location.href='pages/acoustic.html#section1';" style="cursor:pointer;">
         <img src="src/images/slide2.jpg" class="d-block w-100" alt="PIC3">
         <div class="carousel-caption">
           <p>Our Article on Nature Physics, 21, 808-816, 2025</p>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" onclick="location.href='pages/acoustic.html#section2';" style="cursor:pointer;">
         <img src="src/images/slide3.png" class="d-block w-100" alt="PIC4">
         <div class="carousel-caption">
           <p>Our Paper about acoustic manipulation introduced by IEEE Transactions on Robotics Official Account</p>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" onclick="location.href='pages/pi.html#section1';" style="cursor:pointer;">
         <img src="src/images/sitti1.jpg" class="d-block w-100" alt="PIC5">
         <div class="carousel-caption">
-          <p><strong>Jun. 13</strong>, Metin Sitti, President of Koç University Turkey and Professor at the Max Planck Institute, visited the AMNR Laboratory</p>
+          <p><strong>Sep. 16</strong>, Metin Sitti, President of Koç University Turkey and Professor at the Max Planck Institute, visited the AMNR Laboratory</p>
         </div>
       </div>
       <div class="carousel-item">

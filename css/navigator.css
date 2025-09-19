@@ -66,3 +66,75 @@
 .navbar-brand {
   padding-left: 20px;
 }
+
+/* 漂浮导航 */
+/* 固定按钮样式 */
+.fixed-nav-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #757a81;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.fixed-nav-toggle:hover {
+    transform: scale(1.1);
+    background-color: #51575d;
+}
+
+/* 悬浮导航栏样式 */
+.floating-nav {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 320px;
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    padding: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.floating-nav.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.floating-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.floating-nav li {
+    margin: 10px 5px;
+    border-radius: 5px;
+    text-indent: 5px;
+}
+.floating-nav li:hover {
+    background-color: #c2c2c2;
+}
+
+.floating-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.floating-nav a:hover {
+    color: rgb(255, 255, 255);
+}
